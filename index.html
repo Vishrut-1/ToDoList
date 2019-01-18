@@ -4,52 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="todo.js"></script>
-   <h1> To-Do-List</h1>;
+    
+    <title>To-Do-List</title>
+   
 </head>
 
-<title>To-Do-List</title>
-<body>
-    <link rel="stylesheet" href="style.css">
+    
 
+<body onload=fetchtask()></body>>
+    <link rel="stylesheet" href="style.css">
+    <h1>To-Do-List</h1>
 
     <div class="container">
+            
 
      <p>
          
         
         <label for="new-task"><b>Add Task</b></label><br><br>
-        <select >
+        <select name="category" id='category'>
                 <option value="Home">Home</option>
                 <option value="Work">Work</option>
                 <option value="Office">office</option>
         </select>
         
-        <input id="text" type="text"> <button>Add</button>
+        <input id="inputs" type="text"> 
+        <button id="btn">Add</button>
+        
 
-    </p>
+    </p>    
        <p>
             <h3>To-Do</h3>
-            <ul id="inckmplete task">
+            
+        <ul id="ToDo">
+                    
+                
+            <li class="">
+                <input type="checkbox" onchange="completedtask(this)"/>
+                <label>"new task"</label>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button><br>
+            </li>
 
-            <li><input type="checkbox"> <label>Learn Javascript</label><button>Edit</button><button>Delete</button><br></li>
-            <li><input type="checkbox"> <label>go to gym</label><button>Edit</button><button>Delete</button></li>
-
-             </ul>
+            <li class="editmode">
+                <input type="checkbox">
+                <label>Go Shopping</label>
+                <input type="text" value="Go Shopping">
+                <button class="edit" onclick="EditTask()">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+            
+        </ul>
 
         </p>
 
         <h3>Completed Task</h3>
 
-        <ul id='completed-task'>
-            <li><input type="checkbox" checked><label>Learn Javascript</label><button>Edit</button><button>Delete</button></li>
-
-
+        <ul id='completed-task'>    
+                
 
         </ul>
       
 
-    </div>
+    
+    <script src="todo.js"></script>
 </body>
 </html>

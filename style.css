@@ -9,19 +9,20 @@ html {
     
   }
   h1{
-   text-align: center;
-   color: #fff;
+   text-align:center;
+   color:black;
 
   }
  body {
     
     color: #333;
     font-family: Lato, sans-serif;
+    background-color:gainsboro;
   }
   .container {
-    display: block;
+    display:block;
     width: 400px;
-    margin: 100px auto 0;
+    margin: 10px auto 0;
   }
   ul {
     margin: 0 ;
@@ -48,7 +49,7 @@ html {
     cursor: pointer;
   }
   button:hover {
-    color:olivedrab;
+    color:violet;
   }
   /* Heading */
   h3,
@@ -87,7 +88,7 @@ html {
     width: 318px;
   }
   p > button:hover {
-    color: rgb(152, 187, 173);
+    color: violet;
   }
   
   /* Task list */
@@ -111,7 +112,7 @@ html {
     width: 226px;
   }
   li > .delete:hover {
-    color: #CF2323;
+    color:violet;
   }
   
   /* Completed */
